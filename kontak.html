@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="icon" href="./img/logofiks.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="img/logofiks.png" alt="Bootstrap" width="30" height="24">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Beranda</a>
+                  <a class="nav-link" href="menu.html">Menu</a>
+                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-5 px-5" style="background-color: brown; border-radius: 30px; margin-top: 20px;" id="menu">
+        <div class="row justify-content-center" style="background-color: burlywood; border-radius: 50px;">
+            <h1>Form Kritik dan Saran</h1>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="Masukkan email Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Telepon" class="form-label">Telepon</label>
+                        <input type="tel" class="form-control" id="Telepon" placeholder="+62 1231 123 12312">
+                    </div>
+                    <div class="mb-3">
+                        <label for="alamat" class="form-label">Kritik</label>
+                        <textarea class="form-control" id="alamat" rows="3" placeholder="Masukkan Kritik Anda kepada kami"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="alamat" class="form-label">Saran</label>
+                        <textarea class="form-control" id="alamat" rows="3" placeholder="Masukkan Saran Anda kepada kami"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="kirim">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <hr>
+        <p>copyright&copy; Febe Margaretha Putri Alviana Lakausu</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
